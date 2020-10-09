@@ -1,0 +1,82 @@
+.pagination
+{
+    border-bottom: 1px solid #e9e9e9;
+    background: $sudo__grd;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-top: 9px;
+    width: 100%;
+    height: 60px;
+    
+    .box_thumb {
+
+        i {
+            background: $sub__grd;
+            border-radius: 50%;
+            margin-top: -3px;
+            color: $white__color;
+            width: 45px;
+            height: 45px;
+            font-size: 27px;
+            border: 2px solid #dddddd96;
+        }
+        
+        i.about {
+            padding-top: 5px;
+            padding-left: 16px;
+        }
+
+        i.grid {
+            padding-top: 8px;
+            padding-left: 8px;
+            font-size: 26px;
+        }
+
+        i.pie {
+            padding-top: 7px;
+            padding-left: 8px;
+        }
+
+        i.thumbs {
+            padding-top: 5px;
+            padding-left: 8px;
+        }
+
+        i.gamepad {
+            padding-left: 4.2px;
+            padding-top: 7px;
+        }
+
+        i.envelope {
+            padding-top: 6px;
+            padding-left: 7px;
+        }
+
+        i.history {
+          padding-top: 7px;
+          padding-left: 6px;
+        }
+    }
+
+    .section_title {
+        font-family: $special__font;
+        margin-right: 25px;
+        text-align: right;
+        font-size: 22px;
+        padding: 4px;
+        display: block;
+        color: $white__color;
+
+        a {
+            font-size: 28px;
+            color: #dddd;
+        }
+
+        span.pagi_title {
+            font-size: 27px;
+            color: $sub__color3;
+            text-transform: capitalize;
+        }
+    }
+}

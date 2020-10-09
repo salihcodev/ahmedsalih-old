@@ -1,0 +1,348 @@
+
+/* START MEDIA QUERY PART */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    body {    // global cascading for h1
+        .area {
+            h1 {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .area.about .info {
+        margin-top: 30px;
+        .info_box {
+          padding: 25px 4px;
+
+          p {
+            cite {
+                @include highlighter;
+                text-transform: uppercase;
+                font-style: normal;
+            }
+
+            &:nth-of-type(2)::first-letter {
+                margin-left: 0;
+            }
+        }
+      }
+    }
+
+    .container, area {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    nav {
+        .right_nav_side {
+            .handel_aside {
+                i {
+                    font-size: 25px !important;
+                    margin-left: 0 !important;
+                    margin-top: -1px !important;
+                }
+            }
+        }
+    }
+
+    .area {
+        padding: 20px 5px !important;
+    }
+
+    .area.about {
+        .info {
+            h1 {
+                margin-bottom: 30px;
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .pagination {
+        .section_title {
+            margin-right: 8px !important;
+
+            a {
+                color: #dddd !important;
+                font-size: 26px !important;
+            }
+    
+            span.pagi_title {
+                color: #dddd !important;
+                font-size: 25px !important;
+            }
+        }
+    }
+
+    .right_nav_side {
+        .logo_box {
+            .logo {
+                margin: 0 auto 0 70px;
+            }
+        }
+    }
+
+    .gallery {
+        .projects{
+            .project {
+                height: 430px !important;
+            }
+        }
+    }
+
+	.footer_holder {
+		.logo_and_copy_rights p,
+		.made p {
+			font-size: 13px !important;
+			text-align: center !important;
+        }
+
+		.social_icons {
+            ul {
+				margin-top: 45px !important;
+				text-align: center !important;
+
+                li {
+
+					&:first-child {
+                        padding: 15px 2px 0 0 !important;
+                        background: #dddddd94;
+                    }
+
+                    &:nth-child(2) {
+                        padding: 15px 0px 0 0 !important;
+                        background: #dddddda8;
+                    }
+
+                    &:last-child {
+                        padding: 12px 0px 0 0 !important;
+                        background: #dddc;
+					}
+
+                    a {
+                        i {
+                            font-size: 17px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .skills {
+        .skill_blocks {
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+
+    .feedback_form {
+        width: 80% !important;
+    }
+
+    .cus_lname_col {
+        padding-right: 15px;
+        padding-left: 0;
+    }
+
+    .contact_me {
+        .contact_form {
+            form {
+                input[type=submit] {
+                    margin: 20px auto 0 auto !important;
+                }
+            }
+        }
+    }
+
+        .testi_holder {
+            padding: 10px !important;
+        }
+    }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body {   // global cascading for h1
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+
+    .area.about .info {
+        margin-top: 30px;
+    }
+
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .pagination {
+        .section_title {
+            margin-right: 8px !important;
+
+            a {
+                color: #dddd !important;
+                font-size: 26px !important;
+            }
+    
+            span.pagi_title {
+                color: #dddd !important;
+                font-size: 25px !important;
+            }
+        }
+    }
+
+	.footer_holder {
+		.logo_and_copy_rights p,
+		.made p {
+			font-size: 14px !important;
+        }
+
+		.logo_and_copy_rights p {
+			text-align: right;
+		}
+
+		.made p {
+			text-align: left;
+		}
+
+			
+		.social_icons {
+            ul {
+                margin-top: 45px !important;
+				text-align: center !important;
+
+                li {
+
+                    &:first-child {
+                        padding: 15px 2px 0 0 !important;
+                        background: #dddddd94;
+                    }
+
+                    &:nth-child(2) {
+                        padding: 14px 0 0 3px !important;
+                        background: #dddddda8;
+                    }
+
+                    &:last-child {
+                        padding: 13px 1px 0 0 !important;
+                        background: #dddc;
+					}
+
+                    a {
+                        i {
+                            font-size: 17px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .skills {
+        .skill_blocks {
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+
+    .feedback_form {
+        width: 70% !important;
+    }
+
+    .contact_me {
+        .contact_form {
+            form {
+                input[type=submit] {
+                    margin: 20px auto 0 auto !important;
+                }
+            }
+        }
+    }
+
+    .area.feedbacks {
+        padding : 0 !important;
+
+        .testi_holder {
+            padding: 10px !important;
+        }
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hobbies {
+        .h_box {
+            .txt {
+                border-bottom: 1px solid #ccc;
+                border-right: none !important;
+            }
+        }
+    }
+
+	.footer_holder {
+		.logo_and_copy_rights p,
+		.made p {
+			font-size: 13px !important;
+		}
+
+		.social_icons {
+            ul {
+                li {
+
+					&:first-child {
+                        padding: 15px 13px 0 0 !important;
+                        background: #dddddd94;
+                    }
+
+                    &:nth-child(2) {
+                        padding: 15px 11px 0 0 !important;
+                        background: #dddddda8;
+                    }
+
+                    &:last-child {
+                        padding: 12px 11px 0 0 !important;
+                        background: #dddc;
+                    }
+
+                    a {
+                        i {
+                            font-size: 17px !important;
+                        }
+                    }
+                }
+            }
+        }
+	}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .timeline {
+    .timeline_holder {
+      .timeline_map {
+        .period {
+          &:hover {
+            transform: scale(1.01);
+            
+            .period_point {
+              margin-left: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* END MEDIA QUERY PART */

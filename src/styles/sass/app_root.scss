@@ -1,0 +1,22 @@
+
+//>> basics
+@import "helpers/vars"; //involve variables
+@import "../sass/layout/global"; //=> global cascading
+@import "helpers/helper_classes"; // get helper classes involved
+@import "helpers/mixin"; //involve mixin
+
+
+//>> layout
+//--------------------------
+@import "layout/aside";
+@import "layout/nav";
+@import "layout/footer";
+@import "layout/loader";
+@import "layout/mediaQ";
+//--------------------------
+
+
+//>> pages or section of whole the app.
+//===== including the pages
+@import "sections/portfolio";
+//===== including the pages

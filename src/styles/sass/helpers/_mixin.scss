@@ -1,0 +1,125 @@
+// MIXINS
+
+// OVERLAY MIXIN
+@mixin guide_layer {
+    background: linear-gradient(to bottom, #0000001a, #000000b8) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+//=>>>>>>>>>>>>>>>>>>>>
+
+//  MAIN HIGHLIGHTER
+@mixin highlighter {
+    background: $sub__grd;
+    color: $white__color;
+    padding: 4px;
+    font-size: 13px;
+    font-weight: bolder;
+    border-radius: 6px;
+}
+
+
+//  MARKERS GROUPS
+@mixin mark_it {
+    text-shadow: 1px 4px 3px #9c9c9c;
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 900;
+    content: "\f08d";
+    display: block;
+    height: 17px;
+    width: 17px;
+    right: -5px;
+    top: -5px;
+    transform: rotateX(360deg) rotate(10deg);
+}
+
+@mixin flag_mark_it {
+    text-shadow: 1px 4px 3px #9c9c9c;
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    font-weight: 900;
+    content: "\f08d";
+    font-size: 18px;
+    display: block;
+    height: 17px;
+    bottom: 6px;
+    width: 17px;
+    left: 9px;
+}
+
+@mixin coming_soon_mark {
+    color: #333; // coming soon
+}
+
+@mixin excellent_mark {
+    color: #5a66a7; // excellent
+}
+
+@mixin intermediate_mark {
+    color: #1ca58c; // intermediate
+}
+
+@mixin basic_mark {
+    color: #ec5c5c; // basic
+}
+//=>>>>>>>>>>>>>>>>>>>>
+
+
+//  PSEUDO
+@mixin put_pseudo {
+    position: absolute;
+    display: block;
+    // height: 100%;
+    // width: 100%;
+    content: "";
+}
+//=>>>>>>>>>>>>>>>>>>>>
+
+
+//  AVATARS
+@mixin salih_avatar {
+    background-image: url(../images/personal_imgs/ahmedcodev-thumb.jpg);
+}
+
+@mixin male_avatar {
+    background-image: url(../images/avatars/male.svg);
+}
+
+@mixin female_avatar {
+    background-image: url(../images/avatars/female.svg);
+}
+//=>>>>>>>>>>>>>>>>>>>>
+
+
+//  INPUTS AND BUTTONS
+@mixin sudo__submit {
+    font-family: "Font Awesome 5 Free", $sudo__font;
+    background: $sub__grd;
+    padding: 10px 40px;
+    border-radius: 2px;
+    margin-top: 20px;
+    margin-left: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 21px;
+    border: none;
+    color: $white__color;
+    text-transform: capitalize;
+}
+
+@mixin sudo__btn {
+    font-family: $sudo__font;
+    background: $sub__grd;
+    padding: 10px 40px;
+    border-radius: 2px;
+    margin-top: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 21px;
+    border: none;
+    color: $white__color;
+    text-transform: capitalize;
+}
+//=>>>>>>>>>>>>>>>>>>>>

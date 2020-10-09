@@ -1,0 +1,232 @@
+.contact_me { // SIXTH AREA  "CONTACT"
+    h1,p.contact_para {
+        margin-left: 15px;
+    }
+
+    .contact_form {
+        padding: 0 10px;
+
+        form {
+            margin-top: 30px;
+
+            .input {
+                position: relative;
+                width: 100%;
+
+                input {
+                    padding: 30px 10px 15px 15px;
+                }
+
+                textarea {
+                    padding: 30px 10px 10px 15px;
+                    height: 200px;
+                }
+
+                input, textarea {
+                    border: $light__border;
+                    border-bottom: 2px solid #dddd;
+                    margin-bottom: 20px;
+                    border-radius: 4px;
+                    color: #555;
+                    width: 100%;
+                }
+
+                .input_flag {
+                    text-transform: lowercase;
+                    transition: all ease 0.4s;
+                    position: absolute;
+                    color: #888;
+                    top: 35px;
+                    left: 17px;
+                }
+            }
+
+            input[type=submit]  {
+                @include sudo__submit;
+            }
+        }
+
+        .another_ways_to_connect {
+            margin-top: 70px;
+
+            > p {
+                margin: 150px 0 70px 0!important;
+                text-align: center;
+            }
+
+            .hang_contacts {
+
+                .contact_row_cust {
+                    padding: 0 20px;
+
+                    .contact_col_cust {
+                        padding-right: 3px;
+                        padding-left: 3px;
+                        margin-top: 5px;
+                        border-radius: 3px;
+
+                        .item_cont {
+                            box-shadow: -2px 2px 3px #777;
+                            text-align: center;
+                            height: 100%;
+                            padding: 5px 0;
+                            width: 100%;
+
+                            &:hover .switcher_icon i {
+                                top: 65px;
+                            }
+
+                            &:hover .switcher_icon span.i_trick {
+                                top: 11px;
+                            }
+
+                            .switcher_icon {
+                                transform: translate(-50%, -50%);
+                                background: #00000017;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                position: relative;
+                                font-size: 18px;
+                                padding: 1px;
+                                height: 40px;
+                                color: $white__color;
+                                width: 40px;
+                                top: 50%;
+                                left: 50%;
+
+                                i {
+                                    position: absolute;
+                                    transition: 0.5s;
+                                    top: 11px;
+                                }
+
+                                span.i_trick {
+                                    transition: 0.5s;
+                                    position: absolute;
+                                    top: -27px;
+                                }
+                            }
+                        }
+
+                        .facebook_cont {
+                            background: #3b5998;
+
+                            i,
+                            span.i_trick {
+                                left: 16px !important;
+                            }
+                        }
+
+                        .twitter_cont {
+                            background: #1da1f2;
+
+                            i,
+                            span.i_trick {
+                                left: 12px !important;
+                            }
+                        }
+
+                        .youtube_cont {
+                            background: #e60909;
+
+                            i,
+                            span.i_trick {
+                                left: 10px !important;
+                            }
+                        }
+
+                        .askfm_cont {
+                            background: #db3552;
+
+                            i.ask,
+                            span.i_trick {
+                                background-image: url(../images/other/ask-fm.svg);
+                                background-size: 100% 100%;
+                                left: 5px !important;
+                                text-indent: -9999px;
+                                display: block;
+                                height: 20px;
+                                width: 31px;
+                            }
+                        }
+
+                        .instagram_cont {
+                            background: #c13584;
+
+                            i,
+                            span.i_trick {
+                                left: 13px !important;
+                            }
+                        }
+
+                        .stackoverflow_cont {
+                            background: #da904f;
+
+                            i,
+                            span.i_trick {
+                                left: 12px !important;
+                            }
+                        }
+
+                        .github_cont {
+                            background: #333;
+
+                            i,
+                            span.i_trick {
+                                left: 11px !important;
+                            }
+                        }
+
+                        .behance_cont {
+                            background: #1769ff;
+
+                            i,
+                            span.i_trick {
+                                left: 11px !important;
+                            }
+                        }
+
+                        .linkedin_cont {
+                            background: #0077b5;
+
+                            i,
+                            span.i_trick {
+                                left: 12px !important;
+                            }
+                        }
+
+                        .readdit_cont {
+                            background: #b53900;
+
+                            i,
+                            span.i_trick {
+                                left: 11px !important;
+                            }
+                        }
+
+
+                        .whatsup_cont {
+                            background: #075e54;
+
+                            i,
+                            span.i_trick {
+                                left: 12px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact_map {
+        margin-top: 30px;
+        height: 500px;
+        width: 100%;
+
+        iframe {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

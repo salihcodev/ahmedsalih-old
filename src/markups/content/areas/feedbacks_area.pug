@@ -1,0 +1,93 @@
+section#feedbacks.area.feedbacks
+  include ../../components/feedbacks_pagination
+
+  .testi_holder
+    h1
+      | people's feedbacks 
+      span
+    .opi_holders
+      input#opi_one(type="radio" name="opinion" checked="")
+      label(for="opi_one")
+        .opinion_avatar.salih_avatar
+        h3 my self
+      section.sec_one
+        .opi_info
+          .row
+            .col
+              .opi_history
+                p always
+        p.opi.reset_m
+          q comparing the old version of me with the current version... this comparison makes sense and it's fare enough.
+
+      input#opi_tow(type="radio" name="opinion")
+      label(for="opi_tow")
+        .opinion_avatar.abdullah_avatar
+        h3 abdallah ali
+      section.sec_tow
+        .opi_info
+          .row
+            .col
+              .opi_history
+                p 21/8/2019
+        p.opi.reset_m
+          q
+            | this is testing test...
+
+      input#opi_three(type="radio" name="opinion")
+      label(for="opi_three")
+        .opinion_avatar.heba_avatar
+        h3 heba huseen
+      section.sec_three
+        .opi_info
+          .row
+            .col
+              .opi_history
+                p 21/8/2019
+        p.opi.reset_m
+          q this is testing test...
+
+    //- 
+      input#opi_four(type='radio', name='opinion')
+      label(for='opi_four')
+        .opinion_avatar
+          img(src='images/personal_imgs/ahmedcodev.jpg', alt='')
+        h3 tariq mordy
+      section.sec_four
+        .opi_info
+          .row
+            .col
+              .opi_history
+                p 21/8/2019
+        p.opi.reset_m
+          q Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, aut.
+
+      input#opi_five(type='radio', name='opinion')
+      label(for='opi_five')
+        .opinion_avatar
+          img(src='images/personal_imgs/ahmedcodev.jpg', alt='')
+        h3 fatma mohamed
+      section.sec_five
+        .opi_info
+          .row
+            .col
+              .opi_history
+                p 21/8/2019
+        p.opi.reset_m
+          q Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, aut.
+
+      input#opi_six(type='radio', name='opinion')
+      label(for='opi_six')
+        .opinion_avatar
+          img(src='images/personal_imgs/ahmedcodev.jpg', alt='')
+        h3 ibraheem ismaeel
+      section.sec_six
+        .opi_info
+          .row
+            .col
+              .opi_history
+                p 21/8/2019
+        p.opi.reset_m
+          q Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, aut.
+
+
+  include ../../layout/footer

@@ -1,0 +1,90 @@
+nav
+{
+    @import "../helpers/vars";
+    box-shadow: 0 1px 5px -1px #0000008a;
+    justify-content: space-between;
+    background: $sudo__grd;
+    margin-bottom: 60px;
+    position: fixed;
+    transition: 0.5s;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    z-index: 8;
+    top: 0;
+    left: 0;
+
+
+    .right_nav_side {
+        .handel_aside {
+            i.open_aside {
+                display: none;
+            }
+        
+            button.aside_handler {
+                border: none;
+                position: relative;
+                width: 30px;
+                height: 45px;
+                top: 7px;
+                right: 15px;
+            
+
+                span.bar {
+                    width: 90%;
+                    height: 2px;
+                    background: #ffffffaf;
+                    display: block;
+                    margin: 4px 0 4px 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: all ease 0.4s;
+                    border-radius: 2px;
+                }
+
+                span.bar.bar_one {
+                    // background: transparent !important;
+                    top: 12px;
+                }
+
+                span.bar.bar_two {
+                    transform: rotate(-143deg);
+                    top: 13px;
+                    left: -16px;
+                    width: 60%;
+                }
+
+                span.bar.bar_three {
+                    transform: rotate(-34deg);
+                    top: 3px;
+                    left: -16px;
+                    width: 60%;
+                }
+
+                span.bar.bar_four {
+                    // background: transparent !important;
+                    top: 4px;
+                }
+
+            }
+        }
+    }
+
+    .left_nav_side {
+        .logo_box {
+            margin: -40px auto 0;
+            width: 150px;
+            height: 50px;
+
+            .logo {
+                background-image: url("../images/logo/logo_simi.svg");
+                background-size: 100% 100%;
+                margin: 25px 5px 0;
+                height: 90px;
+                display: block;
+                width: 70px;
+            }
+        }
+    }
+}

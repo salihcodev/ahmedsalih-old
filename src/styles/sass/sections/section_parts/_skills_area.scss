@@ -1,0 +1,529 @@
+.skills { // THIRD AREA  "SKILLS"
+    .skills_box {
+        min-height: 530px;
+        padding: 10px;
+
+        h1 {
+            margin-bottom: 110px;
+            margin-top: 5px;
+        }
+    }
+
+    .skill_blocks {
+        //  global
+        h2 {
+            margin-bottom: 50px;
+            margin-top: 90px;
+        }
+
+        p.tools_description {
+          margin-top: -30px;
+          margin-bottom: 60px;
+        }
+        
+        .s_box {
+            border: $light__border;
+            background: #e4e5e6bd;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+            padding-top: 12px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            transition: all ease 0.3s;
+
+            &:hover {
+              box-shadow: 0 0 15px -8px black;
+            }
+
+            .html5 {
+                &::after {
+                    @include excellent_mark;
+                    @include mark_it;
+                }
+            }
+
+            .css3 {
+                &::after {
+                    @include excellent_mark;
+                    @include mark_it;
+                }
+            }
+
+            .sass {
+                &::after {
+                    @include excellent_mark;
+                    @include mark_it;
+                }
+            } 
+
+            .pug {
+                &::after {
+                    @include excellent_mark;
+                    @include mark_it;
+                }
+            }
+
+            .javascript {
+                &::after {
+                    @include intermediate_mark;
+                    @include mark_it;
+                }
+            }
+
+            .react {
+                &::after {
+                    @include intermediate_mark;
+                    @include mark_it;
+                }
+            }
+
+            .vue {
+                &::after {
+                    @include coming_soon_mark;
+                    @include mark_it;
+                }
+            }
+
+            .jq {
+                &::after {
+                    @include excellent_mark;
+                    @include mark_it;
+                }
+            }
+
+            .bootstrap {
+                &::after {
+                    @include excellent_mark;
+                    @include mark_it;
+                }
+            }
+
+            .materialize {
+                &::after {
+                    @include intermediate_mark;
+                    @include mark_it;
+                }
+            }
+
+            .foundation {
+                &::after {
+                    @include coming_soon_mark;
+                    @include mark_it;
+                }
+            }
+
+            .tailwind {
+                &::after {
+                    @include basic_mark;
+                    @include mark_it;
+                }
+            }
+
+
+            .photoshop {
+                &::after {
+                    @include excellent_mark;
+                    @include mark_it;
+                }
+            }
+
+            .illustrator {
+                &::after {
+                    @include intermediate_mark;
+                    @include mark_it;
+                }
+            }
+
+            .terminal {
+                &::after {
+                    @include excellent_mark;
+                    @include mark_it;
+                }
+            }
+
+            .linux {
+                &::after {
+                    @include excellent_mark;
+                    @include mark_it;
+                }
+            }
+
+            .inkscape {
+                &::after {
+                    @include intermediate_mark;
+                    @include mark_it;
+                }
+            }
+        }
+
+        .jq, .npm, .yarn {
+            margin-bottom: 30px !important;
+            margin-top: 15px !important;
+        }
+
+        .icon {
+            padding-bottom: 15px;
+            border-radius: 10px;
+            margin: auto;
+
+            i {
+                font-size: 50px;
+            }
+        }
+
+        h4 {
+            font-family: $special__font;
+            margin: 15px 0 5px 0;
+            font-size: 19px;
+        }
+        //  end global
+    }
+        >div >div {
+            background: #00000003;
+            margin-bottom: 8px;
+            min-height: 80px;
+    }
+
+    .skill_percentage {
+        .skill_percentage_flag {
+            background: #f3f3e2;
+            width: 100%;
+
+            p {
+                text-align: center;
+            }
+        }
+        .percentage_holder {
+            width: 100%;
+            min-height: 400px;
+            padding: 50px 10px 20px 20px;
+
+            h3 {
+                margin-bottom: 30px;
+            }
+
+            .round {
+                background: #e6e6e6;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                height: 13px;
+                width: 100%;
+
+                &:hover span.perc span.perc_num {
+                    display: block;
+                }
+
+                span.perc {
+                    background:#444;
+                    border-radius: 5px;
+                    position: relative;
+                    display: block;
+                    height: 100%;
+
+                    &::after {
+                      text-shadow: 1px 4px 3px #9c9c9c;
+                      font-family: "Font Awesome 5 Free";
+                      font-weight: 900;
+                      content: "\f041";
+                      position: absolute;
+                      font-size: 14px;
+                      right: -6px;
+                      top: -16px;
+                    }
+
+                    span.perc_num {
+                        background: #333;
+                        transform: rotate(90deg);
+                        padding: 4px 10px 0 0;
+                        border-radius: 4px;
+                        position: absolute;
+                        text-align: center;
+                        padding-left: 7px;
+                        font-size: 13px;
+                        display: none;
+                        height: 20px;
+                        color: $white__color;
+                        width: 40px;
+                        top: -4.6px;
+                        left: -39px;
+
+                        &::after {
+                            transition: all cubic-bezier(0.01, 1.13, 1, 1) 0.5s;
+                            border-left: 8px solid transparent;
+                            border-right: 8px solid transparent;
+                            border-bottom: 8px solid #333;
+                            position: absolute;
+                            display: block;
+                            content: "";
+                            right: 12px;
+                            top: -7px;
+                        }
+                    }
+                }
+            }
+
+            .tech_skills {
+                margin-bottom: 20px;
+
+                .round {
+                    span.html_perc {
+                        width: 90%;
+                    }
+
+                    span.css_perc {
+                        width: 85%;
+                    }
+                    
+                    span.sass_perc {
+                        width: 70%;
+                    }
+
+                    span.pug_perc {
+                        width: 75%;
+                    }
+
+                    span.js_perc {
+                        width: 55%;
+                    }
+
+                    span.react_perc {
+                        width: 50%;
+                    }
+
+                    span.vue_perc {
+                        width: 0.5%;
+                    }
+
+                    span.jq_perc {
+                        width: 80%;
+                    }
+
+                    span.bootstrap_perc {
+                        width: 85%;
+                    }
+
+                    span.materialize_perc {
+                        width: 50%;
+                    }
+
+                    span.foundation_perc {
+                        width: 0.5%;
+                    }
+
+                    span.tailwind_perc {
+                        width: 30%;
+                    }
+                }
+            }
+            
+            .mark_box {
+                padding: 20px 0;
+
+                .skill_marker_flag {
+                    margin-bottom: 30px;
+                    background: #f3f3e2;
+                }
+                
+                span.mark {
+                    background: #e4e5e6;
+                    font-family: $imp__font;
+                    transition: all ease 0.3s;
+                    padding-bottom: 6px;
+                    font-weight: bolder;
+                    letter-spacing: 2px;
+                    border-radius: 5px;
+                    max-width: 200px;
+                    color: #2b2828;
+                    padding-top: 6px;
+                    margin: 5px auto;
+                    position: relative;
+                    display: block;
+                    color: #555;
+
+                    &:hover {
+                        background: #ddd8;
+                    }
+
+                    dir.mark_flag {
+                        background: #ddd8;
+                        border-bottom-left-radius: 5px;
+                        border-top-left-radius: 5px;
+                        position: absolute;
+                        padding: 5px;
+                        height: 29px;
+                        width: 35px;
+                        top: -15px;
+                        left: 0;
+
+                        &::after {
+                            @include flag_mark_it;
+                        }
+                    }
+                    
+                    span.figure_desc {
+                      font-size: 14px;
+                      margin-left: 30px;
+
+                      span.figure_percent {
+                        font-size: 14px;
+                        font-family: monospace;
+                        letter-spacing: 0px;
+                        border-left: 1px solid #777;
+                        padding-left: 5px;
+                        float: right;
+                        margin-top: 1px;
+                        margin-right: 10px;
+                      }
+                    }
+                }
+
+                .first_mark {
+                    dir.mark_flag {
+                        &::after {
+                            color: #444; // very well
+                        }
+                    }
+                }
+                
+                .second_mark {
+                    dir.mark_flag {
+                        &::after {
+                            color: #5a66a7; // well
+                        }
+                    }
+                }
+                
+                .third_mark {
+                    dir.mark_flag {
+                        &::after {
+                            color: #1ca58c; //in the progress
+                        }
+                    }
+                }
+                
+                .last_mark {
+                    dir.mark_flag {
+                        &::after {
+                            color: #ec5c5c; // in the feature
+                        }
+                    }
+                }
+            }
+
+            .personal_skills {
+                margin-bottom: 50px;
+                margin-top: 50px;
+
+                .round {
+                    span.photoshop_perc {
+                        width: 60%;
+                    }
+
+                    span.illustrator_perc {
+                        width: 55%;
+                    }
+
+                    span.terminal_perc {
+                        width: 70%;
+                    }
+
+                    span.linux_perc {
+                        width: 80%;
+                    }
+
+                    span.inkscape_perc {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .skills_popup_viewer {
+        animation: skills_popup_viewer_ani 1s;
+        background: #ffffff5c;
+        overflow-y: scroll;
+        padding: 15px;
+        position: fixed;
+        display: none;
+        width: 100%;
+        bottom: 0;
+        top: 0;
+        left: 0;
+
+        .skills_info {
+            box-shadow: 1px 1px 15px#00000069;
+            background: #eaeaea;
+            margin: 80px auto 50px auto;
+            border: 2px dashed #9e9999cc;
+            padding: 30px 10px 5px;
+            border-radius: 8px;
+            min-height: 550px;
+            max-width: 350px;
+            
+            .s_info {
+                background: $white__color;
+                margin: 20px auto;
+                min-height: 480px;
+                position: relative;
+                padding: 10px;
+                width: 100%;
+
+                .skills_popup_closer {
+                    transform: rotate(45deg);
+                    position: absolute;
+                    cursor: pointer;
+                    font-size: 25px;
+                    color: #cc5353;
+                    top: -40px;
+                    right: 0;
+
+                  }
+                  
+                  &:not(:first-of-type) {
+                    display: none;
+                  }
+
+                .icon {
+                  font-size: 35px;
+                }
+
+                main {
+                    text-transform: uppercase;
+                    font-family: $special__font;
+                    padding-left: 14px;
+                    position: relative;
+                    font-size: 32px;
+                    display: inline;
+
+                    &::after {
+                        background: #666;
+                        position: absolute;
+                        display: block;
+                        height: 35px;
+                        content: "";
+                        width: 2px;
+                        left: 4px;
+                        top: -4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+    @keyframes skills_popup_viewer_ani {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+    
+    100% {
+        transform: scale(1);
+    }
+}

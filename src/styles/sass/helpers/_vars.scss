@@ -1,0 +1,33 @@
+
+// SOLID COLORS
+$sudo__color: #333;
+$sub__color1: #1cb391;
+$sub__color2: #258c79;
+$sub__color3: #b7a04c;
+$sub__color4: #97802e;
+
+$txt__color: #555;
+$white__color: #fff;
+$layout__color: #222f3e;
+$light__border:1px solid #ddd9;
+
+//  BOX SHADOWS
+$sudo__shadow: 11px 12px 20px #0000001c;
+
+// GRADIENT  COLORS
+// elements backgrounds
+$sudo__grd: linear-gradient(to right, #222f3e, #222f3e);        // for all backgrounds
+$sub__grd: linear-gradient(to right, #1cb391, #258c79);         // for any background else
+$sub__grd2: linear-gradient(to right, #b7a04c, #97802e);         // for any background else
+$loader__grd: linear-gradient(to right, #222f3ece, #222f3e94);        // for all backgrounds
+
+
+
+//  FONTS VARS
+$loader__font: "Fascinate Inline", cursive;
+$special__font: 'Teko', sans-serif;
+$sudo__font: 'Comfortaa', cursive;
+$imp__font: "Righteous";
+
+
+

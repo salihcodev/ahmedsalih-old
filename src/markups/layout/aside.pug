@@ -1,0 +1,62 @@
+aside
+  .aside_avatar
+    .avatar_and_title
+      .avatar_box
+        img(src="images/personal_imgs/ahmedcodev.jpg" alt="ahmedcodev_image")
+        span.active_point
+      .avatar_title
+        h3 ahmed salih
+        p
+          a(href="https://en.wikipedia.org/wiki/Front-end_web_development" target="_blank")
+            i.fas.fa-paperclip
+            |  front end developer
+
+    .special_contacts
+      .contact.twitter_contact
+        .contact_body
+          a(href="https://www.twitter.com/salihcodev" target="_blank")
+            i.fab.fa-twitter.twitter
+            |  follow on twitter
+        .contact_flag
+          | 27  
+          span followers
+
+  .navigators
+    ul
+      li.selected_in_aside(data-target="about")
+        a(href="#")
+          i.fas.fa-info
+          span About
+
+      li(data-target="skills")
+        a(href="#")
+          i.fas.fa-chart-pie
+          span skills
+
+      li(data-target="gallery")
+        a(href="#")
+          i.fas.fa-th
+          span gallery
+
+      li.last(data-target="timeline")
+        a(href="#")
+          i.fas.fa-history
+          span timeline
+
+      li(data-target="feedbacks")
+        a(href="#")
+          i.fas.fa-thumbs-up
+          span feedbacks
+
+      li.contact(data-target="contact_me")
+        a(href="#")
+          i.fas.fa-envelope-open
+          span keep in touch
+
+
+  .aside_quot_flag
+    i.fas.fa-quote-left
+
+    p
+      q
+        | Your limitation.. it's only your imagination!!.

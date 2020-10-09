@@ -1,0 +1,126 @@
+.feedbacks { // FOURTH AREA  "feedbacks"
+    .testi_holder {
+        padding: 20px;
+
+        h1 {
+            margin-bottom: 120px;
+            position: relative;
+            margin-top: 5px;
+        }
+
+        // global
+        input {
+            display: none;
+            
+            &:nth-of-type(1):checked ~section.sec_one {
+                height: 250px;
+                padding-bottom: 50px;
+            }
+    
+            &:nth-of-type(2):checked ~ section.sec_tow {
+                height: 250px;
+                padding-bottom: 50px;
+            }
+            
+            &:nth-of-type(3):checked ~ section.sec_three {
+                height: 250px;
+                padding-bottom: 50px;
+            }
+            // &:nth-of-type(4):checked ~ section.sec_four {
+            //     height: 250px;
+            //     padding-bottom: 50px;
+            // }
+    
+            // &:nth-of-type(5):checked ~ section.sec_five {
+            //     height: 250px;
+            //     padding-bottom: 50px;
+            // }
+
+            // &:nth-of-type(6):checked ~ section.sec_six {
+            //     height: 250px;
+            //     padding-bottom: 50px;
+            // }
+        }
+
+        label {
+            background: $sudo__grd;
+            padding: 10px;
+            position: relative;
+            display: flex !important;
+            margin-top: 25px;
+            cursor: pointer;
+            display: block;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            text-transform: capitalize;
+
+            .opinion_avatar {
+                border: 2px solid $sub__color3;
+                border-bottom: 2px solid $sub__color4;
+                background-size: cover;
+                border-radius: 50%;
+                overflow: hidden;
+                display: inherit;
+                padding: 2px;
+                height: 40px;
+                width: 40px;
+            }
+            
+            .opinion_avatar.salih_avatar {
+                @include salih_avatar;
+            }
+            .opinion_avatar.abdullah_avatar {
+                @include male_avatar;
+            }
+            .opinion_avatar.heba_avatar {
+                @include female_avatar;
+            }
+
+            h3 {
+                font-family: $sudo__font;
+                word-spacing: 1px;
+                letter-spacing: 1px;
+                font-size: 18px;
+                color: $white__color;
+                margin-top: 22px;
+                margin-left: 10px;
+            }
+        }
+
+        section {
+            height: 0;
+            overflow: hidden;
+            background: #e6e6e6;
+            transition: all cubic-bezier(0.42, 0, 0, 1.68) 0.5s;
+            padding: 0 20px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+
+            p.opi {
+                background: #e1e5e8;
+                border: 1px solid #ccc7;
+                border-left: 3px solid #444;
+                border-bottom: 1px solid #ccc;
+                box-shadow: 2px 0 13px 0px #c3bebe52;
+                padding: 25px 10px;
+                margin-top: 10px;
+                font-style: italic;
+                height: 100%;
+                border-radius: 5px;
+            }
+
+            .opi_history {
+                p {
+                    float: right;
+                    padding: 10px 20px 0 20px;
+                    margin: 0;
+                    height: 100%;
+                    text-align: right;
+                    font-size: 15px; 
+                    width: 75px;
+                    min-height: 35px;
+                }
+            }
+        }
+    }
+}

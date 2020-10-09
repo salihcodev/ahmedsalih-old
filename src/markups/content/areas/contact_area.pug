@@ -1,0 +1,123 @@
+section#contact_me.area.contact_me(data-go="contact_me")
+  include ../../components/contact_pagination
+
+  h1
+    | reach me now 
+    span
+  p.contact_para here we go, if you wanna be one of my clients... please send mail, call me.
+  .contact_holder
+    .contact_form
+      form(action="ahmedsalihdev@gmail.com")
+        .row
+          .col-sm-6.col-xs-12.gallery_cust_col.gallery_cust_first_col
+            .input.f_name
+              span.input_flag.input_1_flag
+                | First name 
+                i.far.fa-edit
+              input#f_name(type="text" name="f_name")
+          .col-sm-6.col-xs-12.gallery_cust_col.gallery_cust_second_col
+            .input.l_name
+              span.input_flag.input_2_flag
+                | Last name 
+                i.far.fa-edit
+              input#l_name(type="text" name="l_name")
+          .col-12.gallery_cust_col
+            .input.email
+              span.input_flag.input_3_flag
+                | Email 
+                i.far.fa-envelope-open
+              input#email(type="email" name="email")
+          .col-12.gallery_cust_col
+            .input.message
+              span.input_flag.input_4_flag
+                | message 
+                i.fas.fa-signature
+              textarea#message(name="message")
+        input(type="submit" value="contact") 
+
+      .another_ways_to_connect
+        p
+          | in my 
+          samp social network
+          |  you can also contact, reach and follow me too here ...
+
+        .hang_contacts
+          .row.contact_row_cust
+            .col-xl-2.col-lg-2.col-md-3.col-sm-3.contact_col_cust
+              a(href="https://www.facebook.com/salihcodev" target="_blank")
+                .item_cont.facebook_cont
+                  .switcher_icon
+                    span.fab.fa-facebook-f.i_trick
+                    i.fab.fa-facebook-f
+
+            .col-xl-2.col-lg-2.col-md-3.col-sm-3.contact_col_cust
+              a(href="https://twitter.com/salihcodev" target="_blank")
+                .item_cont.twitter_cont
+                  .switcher_icon
+                    span.fab.fa-twitter.i_trick
+                    i.fab.fa-twitter
+
+            .col-xl-2.col-lg-2.col-md-3.col-sm-3.contact_col_cust
+              a(href="https://www.youtube.com/channel/UCNm6ohWRxXDd5ngRaoNahXw?view_as=subscriber" target="_blank")
+                .item_cont.youtube_cont
+                  .switcher_icon
+                    span.fab.fa-youtube.i_trick
+                    i.fab.fa-youtube
+
+            .col-xl-2.col-lg-2.col-md-3.col-sm-3.contact_col_cust
+              a(href="https://www.instagram.com/salihcodev/" target="_blank")
+                .item_cont.instagram_cont
+                  .switcher_icon
+                    span.fab.fa-instagram.i_trick
+                    i.fab.fa-instagram
+
+            .col-xl-2.col-lg-2.col-md-3.col-sm-3.contact_col_cust
+              a(href="https://ask.fm/ahmedalisalih8" target="_blank")
+                .item_cont.askfm_cont
+                  .switcher_icon
+                    span.fab.fa-ask.i_trick
+                    i.ask
+
+            .col-xl-2.col-lg-2.col-md-3.col-sm-3.contact_col_cust
+              a(href="https://stackoverflow.com/users/11687959/ahmed-a-salih?tab=profile" target="_blank")
+                .item_cont.stackoverflow_cont
+                  .switcher_icon
+                    span.fab.fa-stack-overflow.i_trick
+                    i.fab.fa-stack-overflow
+
+            .col-xl-2.col-lg-2.col-md-3.col-sm-3.contact_col_cust
+              a(href="https://github.com/salihcodev" target="_blank")
+                .item_cont.github_cont
+                  .switcher_icon
+                    span.fab.fa-github.i_trick
+                    i.fab.fa-github
+
+            .col-xl-2.col-lg-2.col-md-3.col-sm-3.contact_col_cust
+              a(href="https://www.behance.net/salihcodev" target="_blank")
+                .item_cont.behance_cont
+                  .switcher_icon
+                    span.fab.fa-behance.i_trick
+                    i.fab.fa-behance
+
+            .col-xl-2.col-lg-2.col-md-3.col-sm-3.contact_col_cust
+              a(href="https://www.linkedin.com/in/salihcodev/" target="_blank")
+                .item_cont.linkedin_cont
+                  .switcher_icon
+                    span.fab.fa-linkedin-in.i_trick
+                    i.fab.fa-linkedin-in
+
+            .col-xl-2.col-lg-2.col-md-3.col-sm-3.contact_col_cust
+              a(href="https://www.reddit.com/user/salihcodev" target="_blank")
+                .item_cont.readdit_cont
+                  .switcher_icon
+                    span.fab.fa-reddit.i_trick
+                    i.fab.fa-reddit
+
+            .col-xl-2.col-lg-2.col-md-3.col-sm-3.contact_col_cust
+              a(href="tel:01552107829" target="_blank")
+                .item_cont.whatsup_cont
+                  .switcher_icon
+                    span.fab.fa-whatsapp.i_trick
+                    i.fab.fa-whatsapp
+
+  include ../../layout/footer
